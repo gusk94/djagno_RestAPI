@@ -17,6 +17,7 @@ app_name = 'musics'
 urlpatterns = [
     path('musics/', views.music_list, name='music_list'),
     path('musics/<int:music_pk>/', views.music_detail, name='music_detail'),
+    path('musics/<int:music_pk>/comments/', views.comments_create, name='comments_create'),
     path('artists/', views.artists_list, name='artists_list'),
     path('artists/<int:artist_pk>/', views.artist_detail, name='artist_detail'),
     path('comments/', views.comments_list, name='comments_list'),
